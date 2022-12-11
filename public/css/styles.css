@@ -1,5 +1,6 @@
 .container {
   min-height: max-content;
+  position: relative;
 }
 
 p {
@@ -54,4 +55,22 @@ p {
   margin-top: 25px;
   font-size: 12px;
   color: #fff;
+}
+
+#logout {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+}
+#logout button {
+  box-sizing: border-box;
+  border: 2px solid #bbbaba;
+  border-radius: 8px;
+  text-align: center;
+  padding: 4px 8px;
+  background-color: transparent;
+}
+#logout button:hover {
+  border-color: #8aebd7;
+  color: #18aa8d !important;
 }
