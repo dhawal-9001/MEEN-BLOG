@@ -1,0 +1,16 @@
+<%- include('partials/header'); -%>
+
+<div>
+  <h2>Admin Login</h2>
+  <form action="/login" method="post">
+    <input type="text" name="username" placeholder="UserName" id="" />
+    <input type="password" name="password" placeholder="Password" id="" />
+    <button type="submit">Login</button>
+  </form>
+</div>
+<% if(loginErr){ %>
+    <div id="loginErr">
+       <p>Username or Password is Invalid</p>
+    </div>
+<% } %>
+<%- include('partials/footer'); -%>
